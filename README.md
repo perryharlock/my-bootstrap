@@ -1,8 +1,6 @@
 my-bootstrap
 ============
 
-My Bootstrap
-=======
 Small set of useful stuff to kickstart a web build
 Uses:
 LESS, Frame, Frag
