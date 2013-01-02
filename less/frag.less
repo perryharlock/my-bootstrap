@@ -1,35 +1,3 @@
-
-//==========================================================
-// Default Config
-
-// Maximum widths
-@frag-max-width: 1200px;
-@frag-ie7-width: 960px;
-
-// Break-points
-@frag-break-tablet: 768px;
-@frag-break-mobile: 380px;
-
-// Columns and gutters
-@frag-column-count: 12;
-@frag-gutter-width: 20px;
-
-//==========================================================
-// Utilities
-
-// Clearfix utility for clearing floats
-.frag-clearfix () {
-    zoom: 1;
-
-    &:before, &:after {
-        display: table;
-        content: '';
-    }
-    &:after {
-        clear: both;
-    }
-}
-
 // Cross-browser box-sizing
 .frag-box-sizing (@box-sizing) {
     -webkit-box-sizing: @box-sizing; // safari 3.1–5.0
@@ -58,7 +26,7 @@
     *width: (@frag-ie7-width - (@frag-gutter-width * 2)); // IE7
     padding-left: @frag-gutter-width;
     padding-right: @frag-gutter-width;
-    .frag-clearfix();
+    .clearfix();
 
     .grid {
         padding-left: 0;

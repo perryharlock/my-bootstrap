@@ -7,8 +7,8 @@ html {
 }
 
 body {
-	.type-size(17px);
-	line-height:1.5;
+	.type-size(@base-type-size);
+	line-height:@base-line-height;
 	font-family:@font-type-base;
 	background:@body-bg-color @body-bg-image fixed repeat center top;
 }
@@ -31,7 +31,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .h6, h6,
 	.type-margin-top(@h-margin);
 	.type-margin-bottom(@h-margin);
   font-family:@font-type-title;
-  line-height:1.5;
+  color:@heading-color;
 }
 
 h1, .h1	{
@@ -226,63 +226,6 @@ dd {
 	padding-left:20px;
 	.type-margin-bottom(16px);
 	margin-left:0;
-}
-
-
-// forms
-label {
-  display:block;
-  .type-margin-top(@h-margin);
-  font-family:@font-type-title;
-  .type-size(24px);
-
-  span {
-    color:@error-color;
-  }
-}
-
-input[type='text'],
-input[type='email'],
-input[type='url'],
-input[type='tel'],
-input[type='search'],
-input[type='password'],
-textarea {
-  height:20px;
-  padding:5px;
-  width:50%;
-  background-color:@input-bg;
-  .box-shadow(3px 3px 3px rgba(0, 0, 0, 0.075) inset);
-  border:1px solid @input-border;
-  color:lighten(@type-color,20%);
-  font-family:@font-type-base;
-  .type-size(14px);
-  .transition();
-}
-
-span.error {
-  display:block;
-  font-family:@font-type-base;
-  color:@error-color;
-  margin-top:0;
-  .type-size(15px);
-  font-style:italic;
-  .transition();
-}
-
-input.error {
-  border:1px solid lighten(@error-color, 40%);
-  background-color:lighten(@error-color, 70%);
-}
-
-input[type='email'],
-input[type='url'] {
-  width:70%;
-}
-
-textarea {
-  width:90%;
-  height:100px;
 }
 
 // navigation menu
