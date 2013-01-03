@@ -251,6 +251,11 @@ dd {
 .secondary-box {
   background-color:@box-secondary-bg;
   border:none;
+  margin-bottom:@block-margin;
+
+  p:last-child {
+    margin-bottom:0;
+  }
 }
 
 // useful classes
@@ -280,7 +285,7 @@ dd {
 }
 
 .pull-right {
-  float:right;
+  float:right !important;
 
   // spacing for right floated figures
   &.figure {
@@ -290,7 +295,7 @@ dd {
 }
 
 .pull-left {
-  float:left;
+  float:left !important;
 
   // spacing for left floated figures
   &.figure {

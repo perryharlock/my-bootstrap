@@ -10,7 +10,12 @@
 	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
 
 </head>
-<body>
+<!--[if IE 7]><body class="no-javascript ie7"><![endif]-->
+<!--[if IE 8]><body class="no-javascript ie8"><![endif]-->
+<!--[if IE 9]><body class="no-javascript ie9"><![endif]-->
+<!--[if !IE]>-->
+<body class="no-javascript">
+<!--<![endif]-->
     <header>
         <div class="header">
             <div class="grid">
@@ -36,10 +41,18 @@
                         <li><a href="#buttons">Buttons</a></li>
                         <li><a href="#media">Media</a></li>
                     </ul>
+
+                    <div class="box">
+                        <ul class="list spaced crunch">
+                            <li><a href="#carousel">JS Carousel</a></li>
+                    </ul>
+
+                    </div>
+                    
                     <div class="box spaced">
                         <p>This is a standard box with spacing</p>
                     </div>
-                    <div class="box secondary-box spaced">
+                    <div class="secondary-box spaced">
                         <p>This is a secondary box with spacing</p>
                     </div>
                 </div>
@@ -313,39 +326,97 @@
         <div class="js">
             <div class="grid">
                 <div class="col-12">
+                    <h2 id="carousel">JS Carousel</h2>
                     <div data-type="carousel" class="carousel">
 
                         <ol class="floated list clearfix button-group">
                             <li><a class="first button" data-role="leftButton" href="#">&laquo;</a></li>
-                            <li><a class="last button" data-role="rightButton"  href="#">&raquo;</a></li>
+                            <li class="pull-right"><a class="last button" data-role="rightButton"  href="#">&raquo;</a></li>
                         </ol>
 
                         <div class="carousel-wrapper" data-role="carouselWrapper">
                             <ul class="floated list clearfix item-container" data-role="itemContainer">
                                 <li id="image1" data-role="carouselItem">
-                                    1
                                     <img alt="A picture of a cuddly little kitten" src="http://placekitten.com/g/300/200" />
                                 </li>
                                 <li id="image2" data-role="carouselItem">
-                                    2
                                     <img alt="A picture of a cuddly little kitten" src="http://placekitten.com/g/300/200" />
                                 </li>
                                 <li id="image3" data-role="carouselItem">
-                                    3
                                     <img alt="A picture of a cuddly little kitten" src="http://placekitten.com/g/300/200" />
                                 </li>
                                 <li id="image4" data-role="carouselItem">
-                                    4
                                     <img alt="A picture of a cuddly little kitten" src="http://placekitten.com/g/300/200" />
                                 </li>
                                 <li id="image5" data-role="carouselItem">
-                                    5
                                     <img alt="A picture of a cuddly little kitten" src="http://placekitten.com/g/300/200" />
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
+
+                <div class="col-12">
+                    <h2 id="tabs">JS Tabs</h2>
+                    <div id="tabs-example" data-role="tabWrapper" class="tab-wrapper">
+                        <ul class="floated list clearfix crunch-bottom tab-nav" data-role="tabNav">
+                            <li>
+                                <a class="first" data-role="tabTrigger" href="#tab-target1">
+                                    Tab 1
+                                </a>
+                            </li>
+                            <li>
+                                <a data-role="tabTrigger" href="#tab-target2">
+                                    Tab 2
+                                </a>
+                            </li>
+                            <li>
+                                <a data-role="tabTrigger" href="#tab-target3">
+                                    Tab 3
+                                </a>
+                            </li>
+                            <li>
+                                <a class="last" data-role="tabTrigger" href="#tab-target4">
+                                    Tab 4
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div id="tab-target1" class="tab-target secondary-box spaced" data-role="tabTarget">
+                            <h4>This is the first tab</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tellus metus, lacinia ut euismod sit amet, bibendum in odio. Suspendisse id cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus semper congue adipiscing. Curabitur dui sapien, luctus viverra pulvinar ut, porta et purus. Mauris eget massa in erat convallis feugiat at ac urna. Nulla ut lorem lacus. Phasellus libero sapien, interdum vel faucibus vitae, tincidunt eu sapien. Nulla commodo nisi ut metus venenatis scelerisque. Pellentesque id justo aliquam enim ornare facilisis at at libero. Sed egestas tincidunt ante, a luctus nibh laoreet vel. Ut et felis at massa rhoncus fermentum.</p>
+
+                            <p>Donec a dolor non velit lobortis vehicula non at lacus. Nullam posuere, odio vel eleifend tempor, quam massa tempor augue, sit amet semper neque tortor a nulla. Ut tincidunt dapibus placerat. Vivamus egestas nisi non quam tincidunt a dictum enim elementum. Maecenas non libero at turpis scelerisque dapibus sed at neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus eget dapibus tortor. Sed vitae enim justo, id accumsan quam. Proin sed sapien et elit dictum rhoncus. Nullam eu nisl nec metus lacinia facilisis. Praesent non massa nec elit ullamcorper sagittis. Donec non urna quam. Maecenas non nibh non odio scelerisque porttitor. Aliquam nec mi sapien, id adipiscing nulla. Ut non libero at libero luctus volutpat a a ante.</p>
+                        </div>
+
+                        <div id="tab-target2" class="tab-target secondary-box spaced" data-role="tabTarget">
+                            <h4>This is the second tab</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tellus metus, lacinia ut euismod sit amet, bibendum in odio. Suspendisse id cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus semper congue adipiscing. Curabitur dui sapien, luctus viverra pulvinar ut, porta et purus. Mauris eget massa in erat convallis feugiat at ac urna. Nulla ut lorem lacus. Phasellus libero sapien, interdum vel faucibus vitae, tincidunt eu sapien. Nulla commodo nisi ut metus venenatis scelerisque. Pellentesque id justo aliquam enim ornare facilisis at at libero. Sed egestas tincidunt ante, a luctus nibh laoreet vel. Ut et felis at massa rhoncus fermentum.</p>
+
+                            <p>Donec a dolor non velit lobortis vehicula non at lacus. Nullam posuere, odio vel eleifend tempor, quam massa tempor augue, sit amet semper neque tortor a nulla. Ut tincidunt dapibus placerat. Vivamus egestas nisi non quam tincidunt a dictum enim elementum. Maecenas non libero at turpis scelerisque dapibus sed at neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus eget dapibus tortor. Sed vitae enim justo, id accumsan quam. Proin sed sapien et elit dictum rhoncus. Nullam eu nisl nec metus lacinia facilisis. Praesent non massa nec elit ullamcorper sagittis. Donec non urna quam. Maecenas non nibh non odio scelerisque porttitor. Aliquam nec mi sapien, id adipiscing nulla. Ut non libero at libero luctus volutpat a a ante.</p>
+                        </div>
+
+                        <div id="tab-target3" class="tab-target secondary-box spaced" data-role="tabTarget">
+                            <h4>This is the third tab</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tellus metus, lacinia ut euismod sit amet, bibendum in odio. Suspendisse id cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus semper congue adipiscing. Curabitur dui sapien, luctus viverra pulvinar ut, porta et purus. Mauris eget massa in erat convallis feugiat at ac urna. Nulla ut lorem lacus. Phasellus libero sapien, interdum vel faucibus vitae, tincidunt eu sapien. Nulla commodo nisi ut metus venenatis scelerisque. Pellentesque id justo aliquam enim ornare facilisis at at libero. Sed egestas tincidunt ante, a luctus nibh laoreet vel. Ut et felis at massa rhoncus fermentum.</p>
+
+                            <p>Donec a dolor non velit lobortis vehicula non at lacus. Nullam posuere, odio vel eleifend tempor, quam massa tempor augue, sit amet semper neque tortor a nulla. Ut tincidunt dapibus placerat. Vivamus egestas nisi non quam tincidunt a dictum enim elementum. Maecenas non libero at turpis scelerisque dapibus sed at neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus eget dapibus tortor. Sed vitae enim justo, id accumsan quam. Proin sed sapien et elit dictum rhoncus. Nullam eu nisl nec metus lacinia facilisis. Praesent non massa nec elit ullamcorper sagittis. Donec non urna quam. Maecenas non nibh non odio scelerisque porttitor. Aliquam nec mi sapien, id adipiscing nulla. Ut non libero at libero luctus volutpat a a ante.</p>
+                        </div>
+
+                        <div id="tab-target4" class="tab-target secondary-box spaced" data-role="tabTarget">
+                            <h4>This is the fourth tab</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tellus metus, lacinia ut euismod sit amet, bibendum in odio. Suspendisse id cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus semper congue adipiscing. Curabitur dui sapien, luctus viverra pulvinar ut, porta et purus. Mauris eget massa in erat convallis feugiat at ac urna. Nulla ut lorem lacus. Phasellus libero sapien, interdum vel faucibus vitae, tincidunt eu sapien. Nulla commodo nisi ut metus venenatis scelerisque. Pellentesque id justo aliquam enim ornare facilisis at at libero. Sed egestas tincidunt ante, a luctus nibh laoreet vel. Ut et felis at massa rhoncus fermentum.</p>
+
+                            <p>Donec a dolor non velit lobortis vehicula non at lacus. Nullam posuere, odio vel eleifend tempor, quam massa tempor augue, sit amet semper neque tortor a nulla. Ut tincidunt dapibus placerat. Vivamus egestas nisi non quam tincidunt a dictum enim elementum. Maecenas non libero at turpis scelerisque dapibus sed at neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus eget dapibus tortor. Sed vitae enim justo, id accumsan quam. Proin sed sapien et elit dictum rhoncus. Nullam eu nisl nec metus lacinia facilisis. Praesent non massa nec elit ullamcorper sagittis. Donec non urna quam. Maecenas non nibh non odio scelerisque porttitor. Aliquam nec mi sapien, id adipiscing nulla. Ut non libero at libero luctus volutpat a a ante.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -363,6 +434,8 @@
     <!-- Javascript loveliness. -->
     <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="js/script.js" ></script>
+    <script type="text/javascript" src="js/carousel.js" ></script>
+    <script type="text/javascript" src="js/tabs.js" ></script>
     
 </body>
 </html>
