@@ -15,7 +15,7 @@
 	var numberImages = item.length;
 	var itemWidth = item.width();
 	var itemHeight = item.height();
-	
+
 	itemContainer.width(numberImages * itemWidth);
 	itemContainer.height(itemHeight);
 	carouselWrapper.height(itemHeight);
@@ -24,7 +24,7 @@
 	item.first().before(item.last());
 
 	// Set indent from left for itemContainer
-	itemContainer.css('left', - itemWidth + 'px');
+	itemContainer.css("left", - itemWidth + "px");
 
 	// Click left
 	leftButton.click(function(event){
@@ -34,12 +34,12 @@
 		var itemContainer = $("[data-role='itemContainer']");
 
 		// Calc left indent
-		var leftIndent = parseInt(itemContainer.css('left')) + itemWidth;
+		var leftIndent = parseInt(itemContainer.css("left")) + itemWidth;
 
 		// Animate, add last item before first and position
-		itemContainer.animate({'left':leftIndent}, function(){
+		itemContainer.animate({"left":leftIndent}, function(){
 			item.first().before(item.last());
-			itemContainer.css('left', - itemWidth + 'px')
+			itemContainer.css("left", - itemWidth + "px")
 		});
 
 	});
@@ -52,12 +52,12 @@
 		var itemContainer = $("[data-role='itemContainer']");
 
 		// Calc left indent
-		var leftIndent = parseInt(itemContainer.css('left')) - itemWidth;
+		var leftIndent = parseInt(itemContainer.css("left")) - itemWidth;
 
 		// Animate, add last item before first and position
-		itemContainer.animate({'left':leftIndent}, function(){
+		itemContainer.animate({"left":leftIndent}, function(){
 			item.last().after(item.first());
-			itemContainer.css('left', - itemWidth + 'px')
+			itemContainer.css("left", - itemWidth + "px");
 		});	
 		
 	});
