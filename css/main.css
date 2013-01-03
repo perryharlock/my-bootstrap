@@ -1067,6 +1067,33 @@ input[type="button"]:focus {
 .no-javascript .tab-wrapper .tab-target {
   display: block;
 }
+.hideshow .hide-show-trigger {
+  cursor: pointer;
+  padding-right: 30px;
+  position: relative;
+}
+.hideshow .hide-show-trigger .icon {
+  position: absolute;
+  right: 8px;
+  top: 15px;
+  width: 13px;
+  height: 13px;
+  background-image: url("../img/style/hideshow.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.hideshow .hide-show-trigger.open .icon {
+  background-position: 0 -110px;
+}
+.hideshow .hide-show-target {
+  display: none;
+}
+.hideshow .hide-show-target.open {
+  display: block;
+}
+.no-javascript .hide-show-target {
+  display: block;
+}
 @media (max-width: 768px) {
   
 }
