@@ -18,7 +18,7 @@ I realised I was doing the smae thing over and over when starting a new build so
 
 * Responsive layout
 * Less stylesheets
-* Easily replaceable color / image variables for easy re-skinning
 * Styleguide 
 * Progessively enhanced javascript carousel
 * Progessively enhanced javascript tabs
+* Example XML Sitemap
