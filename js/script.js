@@ -1,4 +1,8 @@
-﻿$(window).load(function(){
+﻿$(document).ready(function(){
+
+	// ### SIMPLE CAROUSEL ### //
+
+	// Settings
 
 	// Bindings
 	var rightButton = $("[data-role='rightButton']");
@@ -7,31 +11,35 @@
 	var itemContainer = $("[data-role='itemContainer']");
 	var item = $("[data-role='carouselItem']");
 
-	// Calcs
+	// Calcs and size setting
 	var numberImages = item.length;
-	var imageWidth = parseInt(item.width());
-	var imageHeight = item.height();
-
-	// Set widths and heights of elements
-	itemContainer.width(numberImages * imageWidth);
-	itemContainer.height(imageHeight);
-	carouselWrapper.height(imageHeight);
+	var itemWidth = item.width();
+	var itemHeight = item.height();
+	
+	itemContainer.width(numberImages * itemWidth);
+	itemContainer.height(itemHeight);
+	carouselWrapper.height(itemHeight);
 
 	// Insert last li item before first
 	item.first().before(item.last());
 
 	// Set indent from left for itemContainer
-	itemContainer.css('left', - imageWidth + 'px');
+	itemContainer.css('left', - itemWidth + 'px');
 
 	// Click left
 	leftButton.click(function(event){
 		event.preventDefault();
-		var itemContainer = $("[data-role='itemContainer']");
-		var leftIndent = parseInt(itemContainer.css('left')) + imageWidth;
 
+		// Rebind itemContainer
+		var itemContainer = $("[data-role='itemContainer']");
+
+		// Calc left indent
+		var leftIndent = parseInt(itemContainer.css('left')) + itemWidth;
+
+		// Animate, add last item before first and position
 		itemContainer.animate({'left':leftIndent}, function(){
 			item.first().before(item.last());
-			itemContainer.css('left', - imageWidth + 'px')
+			itemContainer.css('left', - itemWidth + 'px')
 		});
 
 	});
@@ -39,15 +47,19 @@
 	// Click right
 	rightButton.click(function(event){
 		event.preventDefault();
-		var itemContainer = $("[data-role='itemContainer']");
-		var leftIndent = parseInt(itemContainer.css('left')) - imageWidth;
 
+		// Rebind itemContainer
+		var itemContainer = $("[data-role='itemContainer']");
+
+		// Calc left indent
+		var leftIndent = parseInt(itemContainer.css('left')) - itemWidth;
+
+		// Animate, add last item before first and position
 		itemContainer.animate({'left':leftIndent}, function(){
 			item.last().after(item.first());
-			itemContainer.css('left', - imageWidth + 'px')
+			itemContainer.css('left', - itemWidth + 'px')
 		});	
 		
 	});
-
 
 });
