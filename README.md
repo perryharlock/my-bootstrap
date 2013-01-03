@@ -13,4 +13,5 @@ I realised I was doing the same thing over and over when starting a new build so
 * Styleguide 
 * Progessively enhanced javascript carousel
 * Progessively enhanced javascript tabs
+* Progessively enhanced javascript hide show
 * Example XML Sitemap
