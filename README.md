@@ -6,7 +6,7 @@ All you need to build a simple static web site.
 About
 -----
 
-I realised I was doing the smae thing over and over when starting a new build so decided (whilst I had the time) to create my own mini bootstrap which has the basics for starting a new site including:
+I realised I was doing the same thing over and over when starting a new build so decided to create my own mini bootstrap which has the basics for starting a simple static web site:
 
 * Responsive layout
 * Less stylesheets
