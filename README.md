@@ -9,7 +9,7 @@ About
 I realised I was doing the same thing over and over when starting a new build so decided to create my own mini bootstrap which has the basics for starting a simple static web site:
 
 * Responsive layout
-* Less stylesheets
+* LESS or Sass stylesheets - you choose
 * Styleguide 
 * Progessively enhanced javascript carousel
 * Progessively enhanced javascript tabs
