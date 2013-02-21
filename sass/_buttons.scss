@@ -1,0 +1,76 @@
+@mixin base-button {
+  @include border-radius;
+  padding:10px 20px;
+  @include box-shadow(3px 3px 3px rgba(0, 0, 0, 0.075) inset);
+  cursor:pointer;
+  font-family:$font-type-title;
+  @include type-size(18);
+  border:solid 1px darken($input-border, 5%);
+
+  &:hover {
+    text-decoration:none;
+  }
+}
+
+.base-button {
+	@include base-button;
+}
+
+.button, button, input[type="submit"], input[type="button"] {
+  @include base-button;
+  background-color:$button-bg;
+  color:$button-color;
+
+  &:hover, &:active, &:focus {
+    background-color:lighten($button-bg,5%);
+    color:darken($button-color,5%);
+  }
+
+}
+
+.secondary-btn {
+  @include base-button;
+  background-color:$secondary-button-bg;
+  color:$button-secondary-color;
+
+  &:hover {
+    background-color:lighten($secondary-button-bg,5%);
+    color:darken($button-secondary-color,5%);
+  }
+
+}
+
+.highlight-btn {
+  @include base-button;
+  background-color:$highlight-button-bg;
+  color:$button-highlight-color;
+
+  &:hover {
+    background-color:lighten($highlight-button-bg, 5%);
+    color:darken($button-highlight-color,5%);
+  }
+
+}
+
+.button-group {
+  
+  .button {
+    float:left;
+    @include border-radius(0, 0, 0, 0);
+    border-right:none;
+
+    &.first {
+      @include border-radius(4px, 0, 0, 4px);
+    }
+
+    &.last {
+      @include border-radius(0, 4px, 4px, 0);
+      border-right:solid 1px darken($input-border, 5%);
+    }
+
+  }
+
+  
+}
+
+

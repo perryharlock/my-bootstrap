@@ -1,0 +1,29 @@
+// less/main.scss
+
+/* This site had been built using Sass - to see the sass files navigate to 
+www.website.co.uk/sass. This will show you the individual sass files :-) */
+
+//site base files
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "base";
+@import "forms";
+@import "buttons";
+
+//grid layout courtesy of rowan manning www.rowanmanning.co.uk
+// converted to Sass by Perry Harlock www.perryharlock.co.uk
+@import "frag";
+
+// site section styles
+@import "header";
+@import "footer";
+
+
+// optional styling for additional features
+@import "optional/carousel";
+@import "optional/tabs";
+@import "optional/hideshow";
+
+// mobile specific styles
+@import "mobile";

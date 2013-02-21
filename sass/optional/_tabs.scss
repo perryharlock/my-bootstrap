@@ -1,0 +1,37 @@
+.tab-wrapper {
+
+	.tab-nav {
+		
+		a {
+			padding:8px 15px;
+			display:block;
+			background-color:lighten($box-secondary-bg,10%);
+			margin-right:8px;
+			@include border-radius(5px, 5px, 0, 0);
+
+			&:hover {
+				background-color:lighten($box-secondary-bg,13%);
+			}
+
+			&.active {
+				background-color:$box-secondary-bg;
+			}
+		}
+	}
+
+	.tab-target {
+		display:none;
+
+		&.active {
+			display:block;
+		}
+	}
+}
+
+.no-javascript {
+	.tab-wrapper {
+		.tab-target {
+			display:block;
+		}
+	}
+}

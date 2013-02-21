@@ -13,17 +13,18 @@
 		a {
 			display:block;
 			text-align:center;
-			.opacity(0.7);
+			@include opacity(0.7);
 
 			&:hover {
-				.opacity(0.9);
+				@include opacity(0.9);
 			}
 		}
 	}
 }
 .carousel-wrapper {
 	overflow:hidden;
-	.type-margin-bottom(20px);
+	@include type-margin-bottom(20);
+	position:relative;
 }
 
 .item-container {

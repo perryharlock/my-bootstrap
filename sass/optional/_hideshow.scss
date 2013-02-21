@@ -1,0 +1,38 @@
+
+
+.hideshow {
+	.hide-show-trigger {
+		cursor:pointer;
+		padding-right:30px;
+		position:relative;
+		
+		.icon {
+			position:absolute;
+			right:8px;
+			top:15px;
+			width:13px;
+			height:13px;
+			background-image:$hideshowimage;
+			background-position:0 0;
+			background-repeat:no-repeat;
+		}
+
+		&.open .icon {
+			background-position:0 -110px;
+		}
+	}
+
+	.hide-show-target {
+		display:none;
+
+		&.open {
+			display:block;
+		}
+	}
+}
+
+.no-javascript {
+	.hide-show-target {
+		display:block;
+	}
+}
