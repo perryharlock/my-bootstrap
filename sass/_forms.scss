@@ -56,3 +56,10 @@ textarea {
   width:90%;
   height:100px;
 }
+
+.radio-buttons, .checkboxes {
+  label {
+    vertical-align:middle;
+    margin:0;
+  }
+}

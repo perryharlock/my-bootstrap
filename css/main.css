@@ -220,6 +220,9 @@ input[type='email'], input[type='url'] { width: 70%; }
 /* line 55, ../sass/_forms.scss */
 textarea { width: 90%; height: 100px; }
 
+/* line 61, ../sass/_forms.scss */
+.radio-buttons label, .checkboxes label { vertical-align: middle; margin: 0; }
+
 /* line 13, ../sass/_buttons.scss */
 .base-button { padding: 10px 20px; cursor: pointer; font-family: Georgia, Times, "Times New Roman", serif; font-size: 18px; font-size: 1.8rem; border: solid 1px #bfbfbf; }
 /* line 8, ../sass/_buttons.scss */
