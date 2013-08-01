@@ -25,7 +25,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 html { font-size: 62.5%; background-color: #ebebe5; color: #444444; }
 
 /* line 9, ../sass/_base.scss */
-body { font-size: 16px; font-size: 1.6rem; line-height: 1.5; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; background: #ebebe5 url(../img/style/bg-texture.png) fixed repeat center top; }
+body { font-size: 16px; font-size: 1.6rem; line-height: 1.5; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* line 16, ../sass/_base.scss */
 .grid { margin: 0 auto; }
