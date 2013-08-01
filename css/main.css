@@ -206,18 +206,18 @@ label span { color: #984428; }
 label:first-child { margin-top: 0; }
 
 /* line 23, ../sass/_forms.scss */
-input[type='text'], input[type='email'], input[type='url'], input[type='tel'], input[type='search'], input[type='password'], textarea { height: 20px; padding: 8px; width: 50%; background-color: #f6f6f6; -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.075) inset; -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.075) inset; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.075) inset; border: 1px solid #cccccc; color: #777777; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 16px; font-size: 1.6rem; -webkit-transition: all 0.5s ease-out; -moz-transition: all 0.5s ease-out; transition: all 0.5s ease-out; }
+input[type='text'], input[type='email'], input[type='url'], input[type='tel'], input[type='search'], input[type='password'], textarea { height: 20px; padding: 8px; width: 50%; background-color: #f6f6f6; border: 1px solid #cccccc; color: #777777; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 16px; font-size: 1.6rem; -webkit-transition: all 0.5s ease-out; -moz-transition: all 0.5s ease-out; transition: all 0.5s ease-out; }
 
-/* line 36, ../sass/_forms.scss */
+/* line 35, ../sass/_forms.scss */
 span.error { display: block; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; color: #984428; margin-top: 0; font-size: 15pxpx; font-size: 1.5pxrem; font-style: italic; -webkit-transition: all 0.5s ease-out; -moz-transition: all 0.5s ease-out; transition: all 0.5s ease-out; }
 
-/* line 46, ../sass/_forms.scss */
+/* line 45, ../sass/_forms.scss */
 input.error { border: 1px solid #e7b5a5; background-color: white; }
 
-/* line 52, ../sass/_forms.scss */
+/* line 51, ../sass/_forms.scss */
 input[type='email'], input[type='url'] { width: 70%; }
 
-/* line 56, ../sass/_forms.scss */
+/* line 55, ../sass/_forms.scss */
 textarea { width: 90%; height: 100px; }
 
 /* line 13, ../sass/_buttons.scss */
