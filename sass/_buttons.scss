@@ -57,7 +57,6 @@
     border-right:none;
 
     &.last {
-      @include border-radius(0, 4px, 4px, 0);
       border-right:solid 1px darken($input-border, 5%);
     }
 
