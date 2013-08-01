@@ -31,12 +31,12 @@ $(document).ready(function(){
 		var item = $("[data-role='carouselItem']");
 
 		// Calc left indent
-		var leftIndent = parseInt(itemContainer.css("left")) + item.width();
+		var leftIndent = parseInt(itemContainer.css("left"),10) + item.width();
 
 		// Animate, add last item before first and position
 		itemContainer.animate({"left":leftIndent}, function(){
 			item.first().before(item.last());
-			itemContainer.css("left", - item.width() + "px")
+			itemContainer.css("left", - item.width() + "px");
 		});
 
 	});
@@ -50,14 +50,14 @@ $(document).ready(function(){
 		var item = $("[data-role='carouselItem']");
 
 		// Calc left indent
-		var leftIndent = parseInt(itemContainer.css("left")) - item.width();
+		var leftIndent = parseInt(itemContainer.css("left"),10) - item.width();
 
 		// Animate, add last item before first and position
 		itemContainer.animate({"left":leftIndent}, function(){
 			item.last().after(item.first());
 			itemContainer.css("left", - item.width() + "px");
-		});	
-		
+		});
+
 	});
 
 });

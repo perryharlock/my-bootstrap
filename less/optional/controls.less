@@ -1,0 +1,32 @@
+.control-outer {
+	position:relative;
+}
+
+.edit-controls {
+	display:none;
+	position:absolute;
+	right:-4px;
+	top:-1px;
+
+	&.active {
+		display:block;
+		top:3px;
+	}
+	.btn {
+		margin-left:2px;
+	}
+}
+
+.control-row:hover {
+	.edit-controls {
+		display:block;
+	}
+}
+
+.control-row.saved td,
+.control-row.saved:nth-child(2n+1) > td,
+.control-row.saved:hover > td {
+	transition: background-color 1s;
+	-webkit-transition: background-color 1s; /* Safari */
+	background-color:lighten(@success-color,40%);
+}

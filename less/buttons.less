@@ -1,7 +1,5 @@
 .base-button {
-	.border-radius();
 	padding:10px 20px;
-	.box-shadow(3px 3px 3px rgba(0, 0, 0, 0.075) inset);
 	cursor:pointer;
 	font-family:@font-type-title;
 	.type-size(18px);
@@ -52,15 +50,9 @@
   
   .button {
     float:left;
-    .border-radius(0, 0, 0, 0);
     border-right:none;
 
-    &.first {
-      .border-radius(4px, 0, 0, 4px);
-    }
-
     &.last {
-      .border-radius(0, 4px, 4px, 0);
       border-right:solid 1px darken(@input-border, 5%);
     }
 
@@ -69,4 +61,23 @@
   
 }
 
+.btn-small {
+  padding:2px 5px;
+  .type-size(14px);
+}
 
+.btn-danger {
+  background-color:@error-color;
+
+  &:hover {
+    background-color:darken(@error-color, 5%);
+  }
+}
+
+.btn-success {
+  background-color:@success-color;
+
+  &:hover {
+    background-color:darken(@success-color, 5%);
+  }
+}

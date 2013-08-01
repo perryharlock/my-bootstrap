@@ -1,7 +1,5 @@
 @mixin base-button {
-  @include border-radius;
   padding:10px 20px;
-  @include box-shadow(3px 3px 3px rgba(0, 0, 0, 0.075) inset);
   cursor:pointer;
   font-family:$font-type-title;
   @include type-size(18);
@@ -56,12 +54,7 @@
   
   .button {
     float:left;
-    @include border-radius(0, 0, 0, 0);
     border-right:none;
-
-    &.first {
-      @include border-radius(4px, 0, 0, 4px);
-    }
 
     &.last {
       @include border-radius(0, 4px, 4px, 0);
@@ -74,3 +67,23 @@
 }
 
 
+.btn-small {
+  padding:2px 5px;
+  @include type-size(14);
+}
+
+.btn-danger {
+  background-color:$error-color;
+
+  &:hover {
+    background-color:darken($error-color, 5%);
+  }
+}
+
+.btn-success {
+  background-color:$success-color;
+
+  &:hover {
+    background-color:darken($success-color, 5%);
+  }
+}
