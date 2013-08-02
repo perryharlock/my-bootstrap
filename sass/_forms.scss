@@ -20,8 +20,8 @@ input[type='url'],
 input[type='tel'],
 input[type='search'],
 input[type='password'],
-textarea {
-  height:20px;
+textarea,
+select {
   padding:8px;
   width:50%;
   background-color:$input-bg;
@@ -30,6 +30,10 @@ textarea {
   font-family:$font-type-base;
   @include type-size($base-type-size);
   @include transition;
+}
+
+select {
+  width:auto;
 }
 
 span.error {

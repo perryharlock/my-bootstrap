@@ -20,16 +20,20 @@ input[type='url'],
 input[type='tel'],
 input[type='search'],
 input[type='password'],
-textarea {
-  height:20px;
+textarea,
+select {
   padding:8px;
-  width:50%;
+  width:80%;
   background-color:@input-bg;
   border:1px solid @input-border;
   color:lighten(@type-color, 20%);
   font-family:@font-type-base;
   .type-size(@base-type-size);
   .transition();
+}
+
+select {
+  width:auto;
 }
 
 span.error {
